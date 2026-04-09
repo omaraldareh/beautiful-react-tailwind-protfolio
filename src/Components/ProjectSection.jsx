@@ -8,7 +8,7 @@ const projects = [
   image: "/Projects/VenueHub.jpg",
   tags: ["HTML", "CSS", "JavaScript", ".NET"],
   demoUrl: "#",
-  githubUrl: "#",
+  githubUrl: "https://github.com/omaraldareh/Venue-Hub",
 },
 {
   id: 2,
@@ -20,15 +20,15 @@ const projects = [
   githubUrl: "#",
 },
 {
-  id: 3,
-  title: "Image Slider",
-  description: "Dynamic image slider with navigation controls and smooth transitions.",
-  image: "/Projects/Slider.png",
-  tags: ["HTML", "CSS", "JavaScript"],
-  demoUrl: "https://tranquil-donut-83bda9.netlify.app/",
-  githubUrl: "#",
-},
-{
+    id: 3,
+    title: "E-Shopify - Modern E-Commerce UI",
+    description: "A sleek, responsive e-commerce landing page focused on modern aesthetic and seamless user experience. Featuring interactive product galleries and a clean, mobile-first design.",
+    image: "/Projects/E-Shopify.png", 
+    tags: ["React", "Tailwind CSS", "Lucide React", "Responsive Design"],
+    demoUrl: "https://e-shopifybyme.netlify.app/", 
+    githubUrl: "https://github.com/React-Projects-Jordam/E-Shopify",
+  },
+ {
   id: 4,
   title: "BookShop Mobile App",
   description: "Flutter mobile app for browsing books and managing a shopping cart.",
@@ -36,7 +36,25 @@ const projects = [
   tags: ["Flutter", "Dart"],
   demoUrl: "#",
   githubUrl: "#",
-}
+},
+{
+    id: 5,
+    title: "Interactive Quiz Application",
+    description: "A dynamic quiz platform built with jQuery, featuring real-time score calculation, progress tracking, and interactive feedback using SweetAlert2. Focused on smooth DOM manipulation and state management.",
+    image: "/Projects/QuizApp.png", 
+    tags: ["JavaScript", "jQuery", "CSS", "SweetAlert2"],
+    demoUrl: "https://quiz-oooo.netlify.app/", 
+    githubUrl: "https://github.com/omaraldareh/Quiz-App/blob/main/script.js",
+  },
+ {
+  id: 6,
+  title: "Image Slider",
+  description: "Dynamic image slider with navigation controls and smooth transitions.",
+  image: "/Projects/Slider.png",
+  tags: ["HTML", "CSS", "JavaScript"],
+  demoUrl: "https://tranquil-donut-83bda9.netlify.app/",
+  githubUrl: "#",
+},
 ]
 
 export const ProjectSection = () => {

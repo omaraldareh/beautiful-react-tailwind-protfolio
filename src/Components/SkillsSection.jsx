@@ -1,7 +1,12 @@
 import { useState } from "react"
 import cn from "../lib/utils"
-import { 
-  Code2, Database, Server, GitBranch, Figma, Laptop 
+import {
+  Code2,
+  Database,
+  Server,
+  GitBranch,
+  Figma,
+  Laptop
 } from "lucide-react"
 
 const skills = [
@@ -10,40 +15,43 @@ const skills = [
   { name: "JavaScript", icon: Code2, category: "frontend" },
   { name: "React", icon: Code2, category: "frontend" },
   { name: "Next.js", icon: Code2, category: "frontend" },
-  { name: "Tailwind CSS", icon: Laptop, category: "frontend" }, 
-  { name: "Bootstrap", icon: Laptop, category: "frontend" },   
-  { name: "Sass", icon: Code2, category: "frontend" }, 
+  { name: "Tailwind CSS", icon: Laptop, category: "frontend" },
+  { name: "Bootstrap", icon: Laptop, category: "frontend" },
+  { name: "Sass", icon: Code2, category: "frontend" },
 
   // Backend
+  { name: "Node.js", icon: Server, category: "backend" },
+  { name: "Express.js", icon: Server, category: "backend" },
   { name: ".NET Core / Web API", icon: Server, category: "backend" },
-  { name: "Clean Architecture", icon: Server, category: "backend" }, 
-  { name: "LINQ & Entity Framework", icon: Database, category: "backend" },
+  { name: "Clean Architecture", icon: Server, category: "backend" },
   { name: "Unit Testing (xUnit)", icon: Code2, category: "backend" },
 
-  // Database 
-  { name: "SQL Server (T-SQL)", icon: Database, category: "backend" },
-  { name: "Oracle SQL / PL-SQL", icon: Database, category: "backend" }, 
-  { name: "Query Optimization", icon: Laptop, category: "backend" }, 
-  { name: "DB Design & Normalization", icon: Database, category: "backend" },
+  // Database
+  { name: "MongoDB", icon: Database, category: "database" },
+  { name: "SQL Server (T-SQL)", icon: Database, category: "database" },
+  { name: "Oracle SQL / PL-SQL", icon: Database, category: "database" },
+  { name: "Query Optimization", icon: Laptop, category: "database" },
+  { name: "DB Design & Normalization", icon: Database, category: "database" },
 
   // Tools
   { name: "Git/GitHub", icon: GitBranch, category: "tools" },
-  { name: "Figma", icon: Figma, category: "tools" },
+  { name: "Figma", icon: Figma, category: "tools" }
 ]
 
-const categories = ["all", "frontend", "backend", "tools"]
+const categories = ["all", "frontend", "backend", "database", "tools"]
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all")
 
   const filteredSkills = skills.filter(
-    (skill) => activeCategory === "all" || skill.category === activeCategory
+    (skill) =>
+      activeCategory === "all" || skill.category === activeCategory
   )
 
   return (
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
-        
+
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           My <span className="text-primary">Skills</span>
         </h2>
@@ -76,12 +84,10 @@ export const SkillsSection = () => {
                 key={key}
                 className="group bg-card p-6 rounded-xl border border-border/50 flex flex-col items-center justify-center text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:border-primary/50"
               >
-                {/* Icon Container */}
-                <div className="mb-4 p-3 rounded-2xl bg-primary/5 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white group-hover:rotate-[360deg]">
+                <div className="mb-4 p-3 rounded-2xl bg-primary/5 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white group-hover:rotate-360">
                   <Icon size={28} />
                 </div>
 
-                {/* Name */}
                 <h3 className="font-semibold text-sm tracking-wide">
                   {skill.name}
                 </h3>
@@ -89,6 +95,7 @@ export const SkillsSection = () => {
             )
           })}
         </div>
+
       </div>
     </section>
   )

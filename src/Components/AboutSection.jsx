@@ -14,12 +14,12 @@ export const AboutSection = () => {
 
                     <p className="text-muted-foreground"> 
                     I build modern and responsive web interfaces with a strong focus on clean design and usability
-                    As a recent graduate, I’m highly motivated to grow, learn, and contribute to real-world projects.
+                    As a recent graduate, I'm highly motivated to grow, learn, and contribute to real-world projects.
                     </p>
 
                     <p className="text-muted-foreground">
                     I enjoy solving problems through code and turning ideas into practical, well-structured solutions.
-                    I’m always learning and improving my skills by building projects and exploring modern front-end tools.
+                    I'm always learning and improving my skills by building projects and exploring modern front-end tools.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -28,7 +28,7 @@ export const AboutSection = () => {
                             Get In Touch
                         </a>
 
-                        <a href="/Omar_Aldareya_CV_2026.pdf" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
+                        <a href="/OMAR_ALDAREYA_CV_2026_NEW.pdf" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
                             {" "}
                             Download CV
                         </a>

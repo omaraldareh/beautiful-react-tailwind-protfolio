@@ -31,12 +31,12 @@ const projects = [
 },
 {
   id: 4,
-  title: "BookShop Mobile App",
-  description: "Flutter mobile app for browsing books and managing a shopping cart.",
-  image: "/Projects/BookShop.jpg",
-  tags: ["Flutter", "Dart"],
-  demoUrl: "#",
-  githubUrl: "#",
+  title: "Job Traker",
+  description: "A simple job tracking application built with React and Node.js.",
+  image: "/Projects/jobtrackr.png",
+  tags: ["React", "Node.js", "Express.js", "MongoDB"],
+  demoUrl: "https://job-tracker-eight-bay.vercel.app",
+  githubUrl: "https://github.com/omaraldareh/Job-Tracker",
 },
 {
   id: 5,
